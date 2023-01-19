@@ -35,7 +35,7 @@
   
   <style scoped>
   .login {
-    margin-left: 200px;
+    /* margin-left: 200px; */
   }
   </style>
   

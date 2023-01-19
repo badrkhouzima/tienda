@@ -45,27 +45,9 @@ export default {
             indiceSeleccionado:0,
             nombre:"",
             modelos:[],
-            /*nombre:"Maleta",
-            indiceSeleccionado:0,
-            modelos: [
-                {nombre:"Golden rose", color:"#e7b2a4",stock:10,precio:30,cantidad:0,imagen:"img/bolsa_rosa.png"},
-                {nombre:"Verde pistacho", color:"#a9d39e",stock:20,precio:50,cantidad:0,imagen:"img/bolsa_verde.png"},
-                {nombre:"Lila", color:"#e594eb",stock:0,precio:40,cantidad:0,imagen:"img/bolsa_lila.png"},
-            ],*/
             comentarios:[],
             jsonRecibido:false
         }
-    },
-    created:function() {
-        /*let url="http://46.101.223.217/pcd/productos.php?id="+this.id
-        fetch(url)
-            .then(respuesta => respuesta.json())
-            .then(json => {         //'json' ya es el 'JSON texto' transformado a array, como lo hacíamos con JSON.parse()
-                console.log(json)
-                this.nombre=json.nombre
-                this.modelos=json.modelos
-                this.indiceSeleccionado=0
-            })*/
     },
     methods: {
         comprar:function() {

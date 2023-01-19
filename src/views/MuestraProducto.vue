@@ -18,17 +18,6 @@ export default {
     },
     created:function() {
         this.idSeleccionado=this.$route.params.idProducto
-       
-        //console.log("p2=")
-        //console.log(this.$route.params.p2)
-        
-        /*let url="http://46.101.223.217/pcd/productos.php"
-        fetch(url)
-            .then(respuesta => respuesta.json())
-            .then(json => {         //'json' ya es el 'JSON texto' transformado a array, como lo hacíamos con JSON.parse()
-                console.log(json)
-                this.productos=json
-            })*/
     },
     methods:{
         buscaEnCarrito:function(modelo) {

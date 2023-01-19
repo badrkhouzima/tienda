@@ -1,10 +1,18 @@
 <template>
   <header>
-    <div>Buscar:<input size="30" v-model="store.filtro" /></div>
-    <router-link to="/">Buscar</router-link>
-    <carritoComponente></carritoComponente>
-    <LoginVue></LoginVue>
-    <small>{{ store.userData.nombre }}</small>
+    <div class="buscar">
+      <input
+        size="30"
+        v-model="store.filtro"
+        placeholder="buscar articulos.."
+      />
+      <router-link to="/">Buscar</router-link>
+    </div>
+    <div class="carrito__login">
+      <carritoComponente></carritoComponente>
+      <LoginVue></LoginVue>
+    </div>
+    <!-- <small>{{ store.userData.nombre }}</small> -->
   </header>
 </template>
 
@@ -15,7 +23,7 @@ import LoginVue from "../views/LoginVue.vue";
 
 export default {
   name: "cabecera",
-  components: { carritoComponente,LoginVue },
+  components: { carritoComponente, LoginVue },
   data: function () {
     return {
       store,
@@ -27,6 +35,11 @@ export default {
 <style scoped>
 header {
   display: flex;
-  display: row;
+  /* align-items: center; */
+  /* justify-content: space-between; */
+}
+.carrito__login{
+  display: flex;
+  align-items: center;
 }
 </style>
